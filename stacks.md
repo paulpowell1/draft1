@@ -1,4 +1,4 @@
-<h1>Stacks</h1>
+    <h1>Stacks</h1>
 <p>A stack is a linear data structure. It stores items in a list and can be acces from one end or the other.
 <br>
 <br>

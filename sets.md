@@ -16,6 +16,52 @@
 The key value pairs are unlimited therefore the hash function maps the keys to the tables size. Then the hash value becomes the index for a specific element.</p>
 <p>A real world example would be the Dewey Decimal system.<img src='dewy.jpg.crdownload'></p>
 <p>We have a main key, a subclass key and a section key. Then we have a clasification. When someone is looking for data or an item these numbers narrows the search, the same way hashing does for data that we need to find. </p>
+<h2>Common misconception of sets</h2>
+<hr>
+While the data in sets is unchangable, it also is changable. While you may not be able to change the elements directly, you can add or delete items in a set.
+<h2>Methods</h2>
+<hr>
+<p>Similar to stacks or most other datastructures sets have built in functions that can carry out useful tasks.</p>
+<hr>
+<h3>add()<h3>
+<hr>
+The add function adds an element to the set.
+
+    set = {'item1', 'item2', 'item3'}
+    set.add('itemblue')
+    set.add('itemred')
+    print(set)
+The code would then print.
+    
+    {'item1', 'item2', 'item3','itemblue', 'itemred'}
+<h3>Clear()</h3>
+<hr>
+Removes all the elements of the set.
+
+    letters = {'a', 'e', 'i', 'o', 'u'}
+    print(letters)
+    letters.clear()
+    print(letters)
+
+    {'a', 'e', 'i', 'o', 'u'}
+    set()
+<h3>copy()</h3>
+<hr>
+Copy can be useful if you want to keep the original data.
+
+    set = {3, 4, 5, 6}
+    set1 = set.copy()
+
+There are other methods that you can find on w3schools but for now we will only cover these.
+<h3>discard()</h3>
+<hr>
+The discard function removes a specific item from the set
+
+    set = {3, 4, 5}
+    set.discard(5)
+    print(set)
+
+    {3, 4}
 <h2>Examples</h2>
 <p>Time for some examples and practice.</p>
 <hr>
@@ -25,7 +71,21 @@ The key value pairs are unlimited therefore the hash function maps the keys to t
 
     {'moo', 'fish', 'cheese'}
 
-<p>Similare to a list a set can contain strings, integers, floats, and other data types. Including other sets making it a sort of subset.</p>
+<p>Similare to a list a set can contain strings, integers, floats, and other data types. Including other sets making it a sort of subset. We can even turn a list into a set with the set function.</p>
+
+    list = [3, 4, 5, 6, 7]
+    list = set([3, 4, 5, 6, 7])
+    print(list)
+<h2>Practice</h2>
+<hr>
+create a set and then itterate through it. Hint: how would you itterate through a list
+<hr>
+Create a set and copy it, then add 3 new items to it and print both sets
+<hr>
+Create a set and remove a simple item from it and add  a set within the set.
+
+
+
 
 
 

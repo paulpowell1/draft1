@@ -1,4 +1,4 @@
-    <h1>Stacks</h1>
+<h1>Stacks</h1>
 <p>A stack is a linear data structure. It stores items in a list and can be acces from one end or the other.
 <br>
 <br>
@@ -17,38 +17,47 @@
 <li>pop()</li>
 </ul></p> 
 
+<h3>Push(value)</h3>
+<hr>
+Appends an item to the end of a stack.<br>
+Time O(1)
+
+    list = []
+    list.append(1)
+    list.append(2)
+    list.append(3)
+    print(list)
+
+    [1, 2, 3]
 <h3>Empty()</h3>
 <hr>
-Returns weather the stack is empty or not. <br>Time O(1)
-<br>
-<br>
+Returns weather the stack is empty or not.<br> Time O(1)
+
+    if len(list) == 0:
+        print(list)
+
+    []
 <h3>Size()</h3>
 <hr>
 Returns the size of the stack<br>
 Time O(1)
-<br>
-<br>
-<h3>Top()</h3>
-<hr>
-returns a frefrence to the topmost element of the stack<br>
-Time O(1)
-<br>
-<br>
-<h3>Push(a)</h3>
-<hr>
-inserts the element at the top of the stack<br>
-Time O(1)
-<br>
-<br>
+
+    length = len(list)
+    print(length)
+
+    3
 <h3>Pop()</h3>
 <hr>
 deletes the topmost element of a stack<br>
 Time O(1)
-<br>
-<br>
+
+    list.pop()
+    print(list)
+
+    [1,2]
 <h2>Time</h2>
 <p>Notice all of the runtimes for each of the functions is the best possible O(1). This means that regardless of the size of data it will be close to instantanious. </p>
-<h2>Examples</h2>
+<h2>Practice</h2>
 <hr>
 
 

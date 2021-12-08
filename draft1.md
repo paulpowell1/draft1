@@ -10,6 +10,12 @@ Welcome to Data structures. The following topics are necessary in order to under
 <li>
 <a href="https://github.com/paulpowell1/draft1/blob/main/sets.md">Sets</a>
 </li>
+<li>
+<a href="Recursion">Recursion</a>
+</li>
+<li>
+<a href="Tree">Tree</a>
+</li>
 </ul>
 
 

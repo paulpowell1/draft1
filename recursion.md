@@ -33,6 +33,29 @@ An example in python would be.
 <p>This can be a valuable tool to follow your program and find out what your code is exactly doing and what is going wrong or right. </p>
 <h2>Practice</h2>
 <hr>
-<p>Create a recursion function that spells out your name. </p>
+<p>Create a recursion function to do a countdown. </p>
+<details>
+  <summary>Answer</summary>
+
+    def countdown(begin):
+        if begin == 0: 
+            pass
+        else:
+            print(begin-1)
+            countdown(begin-1)
+        countdown(10)
+</details>
+
 <p>Use recursion to find the factorial of a number.</p>
+<details>
+  <summary>Answer</summary>
+
+    def factorial(num):
+        if num == 1:
+            return 1
+        else:
+            return (num * factorial(num-1))
+    num = 5
+    print(factorial(num))
+</details>
 

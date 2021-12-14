@@ -8,6 +8,7 @@
     for i in list:
         if i == 6:
             print(i)
+<h2>Set Properties</h2>
 <p>first what if we have duplicates? We will print the first item that meets our perameters. second what if the list is 10000000000000 characters long? Remember a for loop has Big O of N meaning that it would take 10000000000000 in time complexity or space complexity which is unprefered and even in some cases unusable. </p>
 
 <p>What is so cool about a set is while they are similar to a list they are more like a phone book. Rather than looking for Z by starting at the begining, you know the letter therefore you would start near the end. To understand this concept we need to understand hashing.</p>
@@ -16,6 +17,18 @@
 The key value pairs are unlimited therefore the hash function maps the keys to the tables size. Then the hash value becomes the index for a specific element.</p>
 <p>A real world example would be the Dewey Decimal system.<img src='dewy.jpg.crdownload'></p>
 <p>We have a main key, a subclass key and a section key. Then we have a clasification. When someone is looking for data or an item these numbers narrows the search, the same way hashing does for data that we need to find. </p>
+<h2>Conflicts</h2>
+<hr>
+There can be conflicts such as Untenable variables or violated contstraints. 
+<ul>
+<li>
+If a variable becomes unatainable it appears in the set of conflict variable. If it becomes tenable it disapears. If variables become unatainable they must be reasigned in any solution. 
+</li>
+<li>
+Using open addressing can medigate conflicts. This is where all elements are stored in the hash table itself. So the size of the table must be greater or euqal to how many keys there are. 
+</li>
+</ul>
+<p><img src="hashing.png" width="1000" alt="https://www.geeksforgeeks.org/hashing-set-3-open-addressing/"></p>
 <h2>Common misconception of sets</h2>
 <hr>
 While the data in sets is unchangable, it also is changable. While you may not be able to change the elements directly, you can add or delete items in a set.
@@ -79,10 +92,25 @@ The discard function removes a specific item from the set
 <h2>Practice</h2>
 <hr>
 create a set and then itterate through it. Hint: how would you itterate through a list
+<details>
+  <summary>Answer</summary>
+  
+    set = {'one', 'two', 'three'}
+    for i in set:
+        print(i)
+</details>
 <hr>
 Create a set and copy it, then add 3 new items to it and print both sets
-<hr>
-Create a set and remove a simple item from it and add  a set within the set.
+<details>
+  <summary>Answer</summary>
+  
+    set = {'one', 'two', 'three'}
+    copy = set.copy()
+    copy.add('four')
+    copy.add('five')
+    copy.add('six')
+    print(copy)
+</details>
 
 
 
